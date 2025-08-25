@@ -1,0 +1,8 @@
+com\struts\todo\action\DeleteUserAction.class
+com\struts\todo\action\SignupAction.class
+com\struts\todo\model\User.class
+com\struts\todo\action\IndexAction.class
+com\struts\todo\action\LoginAction.class
+com\struts\todo\action\GetUsersAction.class
+com\struts\todo\dao\UserDao.class
+com\struts\todo\util\MongoUtil.class

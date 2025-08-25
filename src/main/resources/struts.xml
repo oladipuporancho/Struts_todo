@@ -1,0 +1,36 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="default" namespace="/" extends="struts-default,json-default">
+
+        <action name="index" class="com.struts.todo.action.IndexAction">
+            <result>/jsp/index.jsp</result>
+        </action>
+
+        <action name="" class="com.struts.todo.action.IndexAction">
+            <result>/jsp/index.jsp</result>
+        </action>
+
+        <action name="signup" class="com.struts.todo.action.SignupAction">
+            <result name="success" type="json"/>
+            <result name="error" type="json"/>
+        </action>
+
+        <action name="login" class="com.struts.todo.action.LoginAction">
+            <result name="success" type="json"/>
+            <result name="error" type="json"/>
+        </action>
+
+        <action name="getUsers" class="com.struts.todo.action.GetUsersAction">
+            <result name="success" type="json"/>
+            <result name="error" type="json"/>
+        </action>
+
+        <action name="deleteUser" class="com.struts.todo.action.DeleteUserAction">
+            <result name="success" type="json"/>
+            <result name="error" type="json"/>
+            <result name="input" type="json"/>
+        </action>
+
+    </package>
+</struts>
